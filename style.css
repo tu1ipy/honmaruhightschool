@@ -1,0 +1,200 @@
+* {
+  border: 2px solid transparent;
+}
+
+.head {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background-color: transparent;
+}
+
+.title {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  p {
+    letter-spacing: 8px;
+  }
+}
+.menu {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link {
+  background-color: transparent;
+  display: flex;
+  width: 50w;
+  justify-content: space-around;
+  align-items: center;
+
+  a:link {
+    color: #ff0000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-size: 70;
+    color: #e86c89;
+    text-decoration: underline;
+  }
+}
+
+.social {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.pic {
+  text-align: center;
+}
+
+.song {
+  text-align: center;
+}
+
+.video iframe {
+  display: block;
+  margin: 0 auto;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.videobox iframe {
+  display: block;
+  border: none;
+}
+
+.lyrics {
+  width: 400px;
+  border: 2px solid black;
+  padding: 10px 15px;
+  background-color: #fff;
+  overflow-y: auto;
+  height: 315px;
+}
+
+.lyrics h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lyrics h3 {
+  margin: 5px 0 15px 0;
+  font-size: 16px;
+  color: #555;
+  font-weight: normal;
+}
+
+.lyrics p {
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-line;
+  margin: 0;
+}
+.members {
+  width: 80%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.members h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+
+.member-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* 每個成員卡 */
+.member {
+  width: 200px;
+  background-color: #fff;
+  border: 2px solid transparent;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.member:hover {
+  transform: scale(1.03);
+}
+
+/* 保持原比例 */
+.photo {
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+}
+
+.photo img {
+  width: 100%;
+  height: auto; /* 保持原比例 */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* 滑鼠移上放大圖片 */
+.member:hover img {
+  transform: scale(1.03);
+}
+
+/* 浮出介紹層 */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: opacity 0.4s ease;
+}
+
+.member:hover .overlay {
+  opacity: 1;
+}
+
+/* 下方職稱 */
+.info {
+  padding: 10px 5px 15px 5px;
+}
+
+.info h2 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.info p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 浮出簡介文字 */
+.desc {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+}
